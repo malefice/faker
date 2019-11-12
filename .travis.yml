@@ -5,6 +5,7 @@ cache: pip
 branches:
   only:
     - master
+    - issue-989
 
 matrix:
   include:

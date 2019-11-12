@@ -8,7 +8,7 @@ from calendar import timegm
 from datetime import timedelta, MAXYEAR
 
 from dateutil import relativedelta
-from dateutil.tz import tzlocal, tzutc
+from dateutil.tz import gettz, tzlocal, tzutc
 
 from faker.utils import is_string
 from faker.utils.datetime_safe import date, datetime, real_date, real_datetime
@@ -1966,6 +1966,16 @@ class Provider(BaseProvider):
     def timezone(self):
         return self.generator.random.choice(
             self.random_element(self.countries)['timezones'])
+
+    def pytimezone(self, *args, **kwargs):
+        """
+        Generate a random timezone (see `faker.timezone` for any args)
+        and return as a python object usable as a `tzinfo` to `datetime`
+        or other fakers.
+        :example faker.pytimezone()
+        :return dateutil.tz.tz.tzfile
+        """
+        return gettz(self.timezone(*args, **kwargs))
 
     def date_of_birth(self, tzinfo=None, minimum_age=0, maximum_age=115):
         """
