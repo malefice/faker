@@ -5,6 +5,7 @@ cache: pip
 branches:
   only:
     - master
+    - docstest
 
 matrix:
   include:

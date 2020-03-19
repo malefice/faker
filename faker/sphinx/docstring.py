@@ -6,9 +6,9 @@ from collections import namedtuple
 from faker import Faker
 from faker.config import AVAILABLE_LOCALES, DEFAULT_LOCALE
 from faker.sphinx.validator import SampleCodeValidator
-from sphinx.util import logging
+#from sphinx.util import logging
 
-logger = logging.getLogger(__name__)
+#logger = logging.getLogger(__name__)
 _fake = Faker(AVAILABLE_LOCALES)
 _base_provider_method_pattern = re.compile(r'^faker\.providers\.BaseProvider\.(?P<method>\w+)$')
 _standard_provider_method_pattern = re.compile(r'^faker\.providers\.\w+\.Provider\.(?P<method>\w+)$')
@@ -199,7 +199,7 @@ class ProviderMethodDocstring:
                 ).format(
                     method=self._method, kwargs=sample.kwargs,
                 )
-                logger.warning(msg)
+                #logger.warning(msg)
                 continue
 
             try:
@@ -209,7 +209,7 @@ class ProviderMethodDocstring:
                 msg = 'Sample generation failed for method `{method}` with arguments `{kwargs}`'.format(
                     method=self._method, kwargs=sample.kwargs,
                 )
-                logger.warning(msg)
+                #logger.warning(msg)
                 continue
             else:
                 output += _sample_output_template.format(
