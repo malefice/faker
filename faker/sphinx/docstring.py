@@ -6,8 +6,7 @@ from collections import namedtuple
 from faker import Faker
 from faker.config import AVAILABLE_LOCALES, DEFAULT_LOCALE
 from faker.sphinx.validator import SampleCodeValidator
-#from sphinx.util import logging
-import logging
+from sphinx.util import logging
 
 logger = logging.getLogger(__name__)
 _fake = Faker(AVAILABLE_LOCALES)
