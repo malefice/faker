@@ -398,11 +398,11 @@ Credits
 .. _CONTRIBUTING: https://github.com/joke2k/faker/blob/master/CONTRIBUTING.rst
 .. _Factory Boy: https://github.com/FactoryBoy/factory_boy
 
-.. |pypi| image:: https://img.shields.io/pypi/v/Faker.svg?style=flat-square&label=version
+.. |pypi| image:: https://img.shields.io/pypi/v/Faker.svg?style=flat-square&label=version&logo=pypi
     :target: https://pypi.org/project/Faker/
     :alt: Latest version released on PyPI
 
-.. |coverage| image:: https://img.shields.io/coveralls/joke2k/faker/master.svg?style=flat-square
+.. |coverage| image:: https://img.shields.io/coveralls/joke2k/faker/master.svg?style=flat-square&coveralls
     :target: https://coveralls.io/r/joke2k/faker?branch=master
     :alt: Test coverage
 
