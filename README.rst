@@ -402,7 +402,7 @@ Credits
     :target: https://pypi.org/project/Faker/
     :alt: Latest version released on PyPI
 
-.. |coverage| image:: https://img.shields.io/coveralls/joke2k/faker/master.svg?style=flat-square&coveralls
+.. |coverage| image:: https://img.shields.io/coveralls/joke2k/faker/master.svg?style=flat-square&logo=coveralls
     :target: https://coveralls.io/r/joke2k/faker?branch=master
     :alt: Test coverage
 
